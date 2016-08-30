@@ -19,8 +19,8 @@ Rails.application.routes.draw do
 
   post '/selections/man_post' => 'selections#man_post'
 
-  post '/selections/design' => 'selections#design'
+  post '/selections/des_post' => 'selections#des_post'
 
-  post '/selections/technical' => 'selections#technical'
+  post '/selections/tech_post' => 'selections#tech_post'
 
 end

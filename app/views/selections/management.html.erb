@@ -3,7 +3,7 @@
 
 <%= form_tag('man_post', :method => :post) do%>
 
-<% for q in @mcqs.each do %>
+<%@mcqs.each do |q|%>
         <p><%= q.id %> <%= q.content %></p>
         <span><%= radio_button_tag "mcr", "a" %> <%= q.a %></span>
         <span><%= radio_button_tag "mcr", "b" %> <%= q.b %></span>
@@ -11,7 +11,7 @@
         <span><%= radio_button_tag "mcr", "d" %> <%= q.d %></span>
 <% end %>
 
-<% for q in @questions.each do %>
+<% @questions.each do |q|%>
         <p><%= q.id %> <%= q.content %></p>
         <%= text_area_tag "#{q.id}_resp" %>
 <% end %>

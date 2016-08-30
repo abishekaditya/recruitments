@@ -9,8 +9,14 @@ class SelectionsController < ApplicationController
   end
 
   def design
+
+  end
+
+  def des_post
     @user = User.find(session[:user_id])
-    redirect_to '/selections' if @user.update_attribute('portfolio', params[:portfolio])
+    if @user.update_attribute('portfolio', params[:portfolio])
+      redirect_to '/selections'
+    end
   end
 
   def management
@@ -35,8 +41,14 @@ class SelectionsController < ApplicationController
   end
 
   def technical
+
+  end
+
+  def tech_post
     @user = User.find(session[:user_id])
-    redirect_to '/selections' if @user.update_attribute('repository', params[:repository])
+    if @user.update_attribute('repository', params[:repository])
+      redirect_to '/selections'
+    end
   end
 
 end
