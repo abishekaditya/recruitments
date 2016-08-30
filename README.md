@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# recruitments
+Second year IEEE:CS recruitments
+>>>>>>> 00cc0c5a6e4b0ec021d4495289c9f9d49c4a6880
