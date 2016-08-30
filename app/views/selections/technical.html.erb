@@ -1,0 +1,7 @@
+<h1>Selections#technical</h1>
+<p>Enter the url of the git repo</p>
+<%= form_tag('technical', method: :post) do%>
+    <p>URL</p><%= text_field_tag(:repository)%>
+    <%= submit_tag("Submit") %>
+<%end %>
+<%= link_to 'back', selections_path %>

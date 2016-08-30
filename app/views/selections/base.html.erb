@@ -1,0 +1,6 @@
+<h1>Check out whichever suits you the best</h1>
+<%= link_to_unless @answer.attribute_present?(:id), "Management", selections_management_path %>
+<%= link_to_unless @user.attribute_present?(:repository), "Technical", selections_technical_path%>
+<%= link_to_unless @user.attribute_present?(:portfolio), "Design", selections_design_path%>
+<br>
+<%= link_to "Logout", '\logout' %>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails recruitments: production" uuid="392d5248-6787-46bd-acfa-357c2df571cb">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>recruitments</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddff8dfefdfe9dff8dfffdfe3dffedfe7dfefdfe4dffedff9dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails recruitments: test" uuid="74eff7d9-59f4-43d6-8da1-789f5b76ed2e">
+      <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>railsdev</user-name>
+    </data-source>
+    <data-source name="Rails recruitments: development" uuid="9d40f4bd-889e-44ce-b696-8de3d14dac5c">
+      <database-info product="PostgreSQL" version="9.5.4" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>railsdev</user-name>
+      <introspection-scope>recruitments_development:pg_catalog,public,railsdev</introspection-scope>
+      <resolve-scope>recruitments_development:public,railsdev</resolve-scope>
+    </data-source>
+  </component>
+</project>
