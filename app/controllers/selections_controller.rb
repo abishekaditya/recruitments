@@ -14,8 +14,13 @@ class SelectionsController < ApplicationController
 
   def des_post
     @user = User.find(session[:user_id])
-    if @user.update_attribute('portfolio', params[:portfolio])
+    if @user.filled_port?
+      flash[:error] = "Already submitted"
       redirect_to '/selections'
+    else
+      if @user.update_attribute('portfolio', params[:portfolio])
+      redirect_to '/selections'
+      end
     end
   end
 
@@ -28,16 +33,20 @@ class SelectionsController < ApplicationController
   end
 
   def man_post
-    Question.all.each do |q|
-    answer = Answer.new(user_id: session[:user_id],question_id: q.id,response: params[q.id.to_s + '_resp'])
-      answer.save!
-    end
-    Mcq.all.each do |q|
-      mcr = Mcr.new(user_id: session[:user_id],mcq_id: q.id,response: params['mcr'])
-      mcr.save!
+    if Answer.find_by_user_id(session[:user_id]).nil?
+      Question.all.each do |q|
+      answer = Answer.new(user_id: session[:user_id],question_id: q.id,response: params[q.id.to_s + '_resp'])
+        answer.save!
+      end
+      Mcq.all.each do |q|
+        mcr = Mcr.new(user_id: session[:user_id],mcq_id: q.id,response: params['mcr'])
+        mcr.save!
+      end
+      redirect_to '/selections'
+    else
+      redirect_to '/selections'
     end
 
-    redirect_to '/selections'
   end
 
   def technical
@@ -45,9 +54,15 @@ class SelectionsController < ApplicationController
   end
 
   def tech_post
+
     @user = User.find(session[:user_id])
-    if @user.update_attribute('repository', params[:repository])
+    if @user.filled_repo?
+      flash[:error] = "Already submitted"
       redirect_to '/selections'
+    else
+      if @user.update_attribute('repository', params[:repository])
+        redirect_to '/selections'
+      end
     end
   end
 
