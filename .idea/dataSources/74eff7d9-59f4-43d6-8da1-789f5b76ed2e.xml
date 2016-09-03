@@ -9,415 +9,394 @@
     <database id="3" name="testdb">
       <object-id>81933</object-id>
     </database>
-    <database id="4" name="test">
-      <object-id>99136</object-id>
-    </database>
-    <database id="5" name="recruitment_development">
-      <object-id>107975</object-id>
-    </database>
-    <database id="6" name="recruitment_test">
-      <object-id>107976</object-id>
-    </database>
-    <database id="7" name="Recruitments_development">
-      <object-id>108004</object-id>
-    </database>
-    <database id="8" name="Recruitments_test">
-      <object-id>108005</object-id>
-    </database>
-    <database id="9" name="recruit_development">
-      <object-id>108212</object-id>
-    </database>
-    <database id="10" name="recruit_test">
-      <object-id>108213</object-id>
-    </database>
-    <database id="11" name="recruitments_test">
-      <object-id>132198</object-id>
+    <database id="4" name="recruitments_test">
+      <object-id>140198</object-id>
       <visible>1</visible>
     </database>
-    <database id="12" name="recruitments_development">
-      <object-id>132197</object-id>
+    <database id="5" name="recruitments_development">
+      <object-id>140197</object-id>
     </database>
-    <schema id="13" parent="11" name="public">
+    <schema id="6" parent="4" name="public">
       <object-id>2200</object-id>
       <visible>1</visible>
-      <introspection-state-number>2389</introspection-state-number>
-      <introspection-timestamp>2016-09-03.12:28:42.792</introspection-timestamp>
+      <introspection-state-number>2470</introspection-state-number>
+      <introspection-timestamp>2016-09-06.23:04:43.859</introspection-timestamp>
     </schema>
-    <schema id="14" parent="11" name="pg_catalog">
+    <schema id="7" parent="4" name="pg_catalog">
       <object-id>11</object-id>
     </schema>
-    <schema id="15" parent="11" name="pg_toast">
+    <schema id="8" parent="4" name="pg_toast">
       <object-id>99</object-id>
     </schema>
-    <schema id="16" parent="11" name="pg_temp_1">
+    <schema id="9" parent="4" name="pg_temp_1">
       <object-id>11816</object-id>
     </schema>
-    <schema id="17" parent="11" name="pg_toast_temp_1">
+    <schema id="10" parent="4" name="pg_toast_temp_1">
       <object-id>11817</object-id>
     </schema>
-    <schema id="18" parent="11" name="information_schema">
+    <schema id="11" parent="4" name="information_schema">
       <object-id>12199</object-id>
     </schema>
-    <sequence id="19" parent="13" name="answers_id_seq">
-      <object-id>132294</object-id>
-      <state-number>2373</state-number>
+    <sequence id="12" parent="6" name="answers_id_seq">
+      <object-id>140294</object-id>
+      <state-number>2454</state-number>
     </sequence>
-    <sequence id="20" parent="13" name="mcqs_id_seq">
-      <object-id>132307</object-id>
-      <state-number>2376</state-number>
+    <sequence id="13" parent="6" name="mcqs_id_seq">
+      <object-id>140307</object-id>
+      <state-number>2457</state-number>
     </sequence>
-    <sequence id="21" parent="13" name="mcrs_id_seq">
-      <object-id>132318</object-id>
-      <state-number>2377</state-number>
+    <sequence id="14" parent="6" name="mcrs_id_seq">
+      <object-id>140318</object-id>
+      <state-number>2458</state-number>
     </sequence>
-    <sequence id="22" parent="13" name="questions_id_seq">
-      <object-id>132331</object-id>
-      <state-number>2380</state-number>
+    <sequence id="15" parent="6" name="questions_id_seq">
+      <object-id>140331</object-id>
+      <state-number>2461</state-number>
     </sequence>
-    <sequence id="23" parent="13" name="users_id_seq">
-      <object-id>132342</object-id>
-      <state-number>2381</state-number>
+    <sequence id="16" parent="6" name="users_id_seq">
+      <object-id>140342</object-id>
+      <state-number>2462</state-number>
     </sequence>
-    <table id="24" parent="13" name="answers">
-      <object-id>132296</object-id>
-      <state-number>2383</state-number>
+    <table id="17" parent="6" name="answers">
+      <object-id>140296</object-id>
+      <state-number>2464</state-number>
     </table>
-    <table id="25" parent="13" name="ar_internal_metadata">
-      <object-id>132381</object-id>
-      <state-number>2389</state-number>
+    <table id="18" parent="6" name="ar_internal_metadata">
+      <object-id>140381</object-id>
+      <state-number>2470</state-number>
     </table>
-    <table id="26" parent="13" name="mcqs">
-      <object-id>132309</object-id>
-      <state-number>2384</state-number>
+    <table id="19" parent="6" name="mcqs">
+      <object-id>140309</object-id>
+      <state-number>2465</state-number>
     </table>
-    <table id="27" parent="13" name="mcrs">
-      <object-id>132320</object-id>
-      <state-number>2385</state-number>
+    <table id="20" parent="6" name="mcrs">
+      <object-id>140320</object-id>
+      <state-number>2466</state-number>
     </table>
-    <table id="28" parent="13" name="questions">
-      <object-id>132333</object-id>
-      <state-number>2382</state-number>
+    <table id="21" parent="6" name="questions">
+      <object-id>140333</object-id>
+      <state-number>2463</state-number>
     </table>
-    <table id="29" parent="13" name="schema_migrations">
-      <object-id>132373</object-id>
-      <state-number>2386</state-number>
+    <table id="22" parent="6" name="schema_migrations">
+      <object-id>140373</object-id>
+      <state-number>2467</state-number>
     </table>
-    <table id="30" parent="13" name="users">
-      <object-id>132344</object-id>
-      <state-number>2385</state-number>
+    <table id="23" parent="6" name="users">
+      <object-id>140344</object-id>
+      <state-number>2466</state-number>
     </table>
-    <column id="31" parent="24" name="id">
-      <state-number>2373</state-number>
+    <column id="24" parent="17" name="id">
+      <state-number>2454</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval('answers_id_seq'::regclass)</default-expression>
     </column>
-    <column id="32" parent="24" name="response">
-      <state-number>2373</state-number>
+    <column id="25" parent="17" name="response">
+      <state-number>2454</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="33" parent="24" name="user_id">
-      <state-number>2373</state-number>
+    <column id="26" parent="17" name="user_id">
+      <state-number>2454</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="34" parent="24" name="question_id">
-      <state-number>2373</state-number>
+    <column id="27" parent="17" name="question_id">
+      <state-number>2454</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="35" parent="24" name="created_at">
-      <state-number>2373</state-number>
+    <column id="28" parent="17" name="created_at">
+      <state-number>2454</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="36" parent="24" name="updated_at">
-      <state-number>2373</state-number>
+    <column id="29" parent="17" name="updated_at">
+      <state-number>2454</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="37" parent="24" name="answers_pkey">
-      <object-id>132303</object-id>
+    <index id="30" parent="17" name="answers_pkey">
+      <object-id>140303</object-id>
       <columns>id</columns>
       <desc-columns />
       <unique>1</unique>
     </index>
-    <index id="38" parent="24" name="index_questions_on_user_id">
-      <object-id>132306</object-id>
+    <index id="31" parent="17" name="index_questions_on_user_id">
+      <object-id>140306</object-id>
       <columns>user_id</columns>
       <desc-columns />
     </index>
-    <index id="39" parent="24" name="index_answers_on_question_id">
-      <object-id>132305</object-id>
+    <index id="32" parent="17" name="index_answers_on_question_id">
+      <object-id>140305</object-id>
       <columns>question_id</columns>
       <desc-columns />
     </index>
-    <key id="40" parent="24" name="answers_pkey">
-      <object-id>132304</object-id>
+    <key id="33" parent="17" name="answers_pkey">
+      <object-id>140304</object-id>
       <columns>id</columns>
       <underlying-index>answers_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="41" parent="24" name="fk_rails_584be190c2">
-      <object-id>132358</object-id>
+    <foreign-key id="34" parent="17" name="fk_rails_584be190c2">
+      <object-id>140358</object-id>
       <columns>user_id</columns>
       <ref-key>~.users.users_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="42" parent="24" name="fk_rails_3d5ed4418f">
-      <object-id>132353</object-id>
+    <foreign-key id="35" parent="17" name="fk_rails_3d5ed4418f">
+      <object-id>140353</object-id>
       <columns>question_id</columns>
       <ref-key>~.questions.questions_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="43" parent="25" name="key">
-      <state-number>2389</state-number>
+    <column id="36" parent="18" name="key">
+      <state-number>2470</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="44" parent="25" name="value">
-      <state-number>2389</state-number>
+    <column id="37" parent="18" name="value">
+      <state-number>2470</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="45" parent="25" name="created_at">
-      <state-number>2389</state-number>
+    <column id="38" parent="18" name="created_at">
+      <state-number>2470</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="46" parent="25" name="updated_at">
-      <state-number>2389</state-number>
+    <column id="39" parent="18" name="updated_at">
+      <state-number>2470</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="47" parent="25" name="ar_internal_metadata_pkey">
-      <object-id>132387</object-id>
+    <index id="40" parent="18" name="ar_internal_metadata_pkey">
+      <object-id>140387</object-id>
       <columns>key</columns>
       <desc-columns />
       <unique>1</unique>
     </index>
-    <key id="48" parent="25" name="ar_internal_metadata_pkey">
-      <object-id>132388</object-id>
+    <key id="41" parent="18" name="ar_internal_metadata_pkey">
+      <object-id>140388</object-id>
       <columns>key</columns>
       <underlying-index>ar_internal_metadata_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <column id="49" parent="26" name="id">
-      <state-number>2376</state-number>
+    <column id="42" parent="19" name="id">
+      <state-number>2457</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval('mcqs_id_seq'::regclass)</default-expression>
     </column>
-    <column id="50" parent="26" name="content">
-      <state-number>2376</state-number>
+    <column id="43" parent="19" name="content">
+      <state-number>2457</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="51" parent="26" name="a">
-      <state-number>2376</state-number>
+    <column id="44" parent="19" name="a">
+      <state-number>2457</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="52" parent="26" name="b">
-      <state-number>2376</state-number>
+    <column id="45" parent="19" name="b">
+      <state-number>2457</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="53" parent="26" name="c">
-      <state-number>2376</state-number>
+    <column id="46" parent="19" name="c">
+      <state-number>2457</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="54" parent="26" name="d">
-      <state-number>2376</state-number>
+    <column id="47" parent="19" name="d">
+      <state-number>2457</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="55" parent="26" name="correct">
-      <state-number>2376</state-number>
+    <column id="48" parent="19" name="correct">
+      <state-number>2457</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="56" parent="26" name="created_at">
-      <state-number>2376</state-number>
+    <column id="49" parent="19" name="created_at">
+      <state-number>2457</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="57" parent="26" name="updated_at">
-      <state-number>2376</state-number>
+    <column id="50" parent="19" name="updated_at">
+      <state-number>2457</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="58" parent="26" name="mcqs_pkey">
-      <object-id>132316</object-id>
+    <index id="51" parent="19" name="mcqs_pkey">
+      <object-id>140316</object-id>
       <columns>id</columns>
       <desc-columns />
       <unique>1</unique>
     </index>
-    <key id="59" parent="26" name="mcqs_pkey">
-      <object-id>132317</object-id>
+    <key id="52" parent="19" name="mcqs_pkey">
+      <object-id>140317</object-id>
       <columns>id</columns>
       <underlying-index>mcqs_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <column id="60" parent="27" name="id">
-      <state-number>2377</state-number>
+    <column id="53" parent="20" name="id">
+      <state-number>2458</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval('mcrs_id_seq'::regclass)</default-expression>
     </column>
-    <column id="61" parent="27" name="response">
-      <state-number>2377</state-number>
+    <column id="54" parent="20" name="response">
+      <state-number>2458</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="62" parent="27" name="mcq_id">
-      <state-number>2377</state-number>
+    <column id="55" parent="20" name="mcq_id">
+      <state-number>2458</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="63" parent="27" name="user_id">
-      <state-number>2377</state-number>
+    <column id="56" parent="20" name="user_id">
+      <state-number>2458</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="64" parent="27" name="created_at">
-      <state-number>2377</state-number>
+    <column id="57" parent="20" name="created_at">
+      <state-number>2458</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="65" parent="27" name="updated_at">
-      <state-number>2377</state-number>
+    <column id="58" parent="20" name="updated_at">
+      <state-number>2458</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="66" parent="27" name="mcrs_pkey">
-      <object-id>132327</object-id>
+    <index id="59" parent="20" name="mcrs_pkey">
+      <object-id>140327</object-id>
       <columns>id</columns>
       <desc-columns />
       <unique>1</unique>
     </index>
-    <index id="67" parent="27" name="index_mcrs_on_mcq_id">
-      <object-id>132329</object-id>
+    <index id="60" parent="20" name="index_mcrs_on_mcq_id">
+      <object-id>140329</object-id>
       <columns>mcq_id</columns>
       <desc-columns />
     </index>
-    <index id="68" parent="27" name="index_mcrs_on_user_id">
-      <object-id>132330</object-id>
+    <index id="61" parent="20" name="index_mcrs_on_user_id">
+      <object-id>140330</object-id>
       <columns>user_id</columns>
       <desc-columns />
     </index>
-    <key id="69" parent="27" name="mcrs_pkey">
-      <object-id>132328</object-id>
+    <key id="62" parent="20" name="mcrs_pkey">
+      <object-id>140328</object-id>
       <columns>id</columns>
       <underlying-index>mcrs_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="70" parent="27" name="fk_rails_afb7abeb0f">
-      <object-id>132363</object-id>
+    <foreign-key id="63" parent="20" name="fk_rails_afb7abeb0f">
+      <object-id>140363</object-id>
       <columns>mcq_id</columns>
       <ref-key>~.mcqs.mcqs_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="71" parent="27" name="fk_rails_b5b6c80a45">
-      <object-id>132368</object-id>
+    <foreign-key id="64" parent="20" name="fk_rails_b5b6c80a45">
+      <object-id>140368</object-id>
       <columns>user_id</columns>
       <ref-key>~.users.users_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="72" parent="28" name="id">
-      <state-number>2380</state-number>
+    <column id="65" parent="21" name="id">
+      <state-number>2461</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval('questions_id_seq'::regclass)</default-expression>
     </column>
-    <column id="73" parent="28" name="content">
-      <state-number>2380</state-number>
+    <column id="66" parent="21" name="content">
+      <state-number>2461</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="74" parent="28" name="created_at">
-      <state-number>2380</state-number>
+    <column id="67" parent="21" name="created_at">
+      <state-number>2461</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="75" parent="28" name="updated_at">
-      <state-number>2380</state-number>
+    <column id="68" parent="21" name="updated_at">
+      <state-number>2461</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="76" parent="28" name="questions_pkey">
-      <object-id>132340</object-id>
+    <index id="69" parent="21" name="questions_pkey">
+      <object-id>140340</object-id>
       <columns>id</columns>
       <desc-columns />
       <unique>1</unique>
     </index>
-    <key id="77" parent="28" name="questions_pkey">
-      <object-id>132341</object-id>
+    <key id="70" parent="21" name="questions_pkey">
+      <object-id>140341</object-id>
       <columns>id</columns>
       <underlying-index>questions_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <column id="78" parent="29" name="version">
-      <state-number>2386</state-number>
+    <column id="71" parent="22" name="version">
+      <state-number>2467</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar|0</data-type>
     </column>
-    <index id="79" parent="29" name="schema_migrations_pkey">
-      <object-id>132379</object-id>
+    <index id="72" parent="22" name="schema_migrations_pkey">
+      <object-id>140379</object-id>
       <columns>version</columns>
       <desc-columns />
       <unique>1</unique>
     </index>
-    <key id="80" parent="29" name="schema_migrations_pkey">
-      <object-id>132380</object-id>
+    <key id="73" parent="22" name="schema_migrations_pkey">
+      <object-id>140380</object-id>
       <columns>version</columns>
       <underlying-index>schema_migrations_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <column id="81" parent="30" name="id">
-      <state-number>2381</state-number>
+    <column id="74" parent="23" name="id">
+      <state-number>2462</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval('users_id_seq'::regclass)</default-expression>
     </column>
-    <column id="82" parent="30" name="name">
-      <state-number>2381</state-number>
+    <column id="75" parent="23" name="name">
+      <state-number>2462</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="83" parent="30" name="reg_no">
-      <state-number>2381</state-number>
+    <column id="76" parent="23" name="reg_no">
+      <state-number>2462</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="84" parent="30" name="phone">
-      <state-number>2381</state-number>
+    <column id="77" parent="23" name="phone">
+      <state-number>2462</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="85" parent="30" name="email">
-      <state-number>2381</state-number>
+    <column id="78" parent="23" name="email">
+      <state-number>2462</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="86" parent="30" name="password_digest">
-      <state-number>2381</state-number>
+    <column id="79" parent="23" name="password_digest">
+      <state-number>2462</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="87" parent="30" name="repository">
-      <state-number>2381</state-number>
+    <column id="80" parent="23" name="repository">
+      <state-number>2462</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="88" parent="30" name="portfolio">
-      <state-number>2381</state-number>
+    <column id="81" parent="23" name="portfolio">
+      <state-number>2462</state-number>
       <data-type>varchar|0</data-type>
     </column>
-    <column id="89" parent="30" name="created_at">
-      <state-number>2381</state-number>
+    <column id="82" parent="23" name="created_at">
+      <state-number>2462</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <column id="90" parent="30" name="updated_at">
-      <state-number>2381</state-number>
+    <column id="83" parent="23" name="updated_at">
+      <state-number>2462</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp|0</data-type>
     </column>
-    <index id="91" parent="30" name="users_pkey">
-      <object-id>132351</object-id>
+    <index id="84" parent="23" name="users_pkey">
+      <object-id>140351</object-id>
       <columns>id</columns>
       <desc-columns />
       <unique>1</unique>
     </index>
-    <key id="92" parent="30" name="users_pkey">
-      <object-id>132352</object-id>
+    <key id="85" parent="23" name="users_pkey">
+      <object-id>140352</object-id>
       <columns>id</columns>
       <underlying-index>users_pkey</underlying-index>
       <primary>1</primary>

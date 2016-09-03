@@ -4,6 +4,12 @@ class User < ApplicationRecord
   validates :email, :presence => true, :uniqueness => true
   validates :password, :presence => true, :confirmation => true
   has_many :answers, through: :questions
+  before_save :upcase_fields
+
+  def upcase_fields
+    self.reg_no.upcase!
+  end
+
   def filled_repo?
     !(self.read_attribute(:repository).nil?)
   end
