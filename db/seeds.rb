@@ -15,8 +15,7 @@ Question.create(content: 'If your subordinate is given an urgent work but he/she
 Question.create(content: 'Team work is considered as the building block of any organization. What techniques would you use to become a better team member and a better team leader in future?
 ')
 Question.create(content: 'It is not easy to manage disputes in a team. State the methods that might help in solving these disputes. Please give your response considering yourself as a team member.')
-Question.create(content: 'Respond to the previous question considering yourself to be the team leader.
-Sign up for free')
+Question.create(content: 'Respond to the previous question considering yourself to be the team leader.')
 Mcq.create(content: 'Who do you think should lead a team?', a: 'You', b: 'A member with extensive knowledge of the topic', c: 'A member with extensive experience over the topic', d: 'No leader; non-hierarchical structure of team
 ', correct: 'c')
 Mcq.create(content: 'What resolution techniques would you follow in case of difference in perspectives amongst your fellow team members?', a: 'Prefer the best solution', b: 'Prefer the easiest solution', c: 'Find common areas of agreement and then satisfy the purpose', d: 'Find purpose and then evaluate the differences in their approaches', correct: 'c')
