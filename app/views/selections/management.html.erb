@@ -35,10 +35,14 @@
 </main>
 
 <style>
+[type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
+display: inline;
+}
+[type="radio"]:not(:checked)+label:before, [type="radio"]:not(:checked)+label:after {
+    border: 0;
+}
 label {
-  font-size: 16px;
-  margin-left: 15px;
-  margin-bottom: 5px;
+margin-bottom : 5px
 }
 </style>
 <script>
