@@ -36,20 +36,17 @@
 
 <style>
 [type="radio"]:not(:checked), [type="radio"]:checked {
-    position: fixed;
+    position: inherit;
     left: inherit;
     opacity: 100;
 }
+
 [type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
-padding-left: 12px;
+  padding-left: 12px;
+  display: inline;
+  cursor: default;
 }
 [type="radio"]+label:before, [type="radio"]+label:after {
 content: none;
 }
 </style>
-<script>
-  $(document).ready(function(){
-
-    $('#1_resp').trigger('autoresize');
-  });
-</script>
