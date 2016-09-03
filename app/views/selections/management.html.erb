@@ -35,14 +35,16 @@
 </main>
 
 <style>
+[type="radio"]:not(:checked), [type="radio"]:checked {
+    position: fixed;
+    left: inherit;
+    opacity: 100;
+}
 [type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
-display: inline;
+padding-left: 12px;
 }
-[type="radio"]:not(:checked)+label:before, [type="radio"]:not(:checked)+label:after {
-    border: 0;
-}
-label {
-margin-bottom : 5px
+[type="radio"]+label:before, [type="radio"]+label:after {
+content: none;
 }
 </style>
 <script>
