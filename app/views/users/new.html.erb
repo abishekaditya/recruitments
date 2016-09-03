@@ -1,14 +1,82 @@
-<h1>Signup!</h1>
+<head>
+  <%= stylesheet_link_tag "materialize.min.css" %>
+  <%= stylesheet_link_tag "style" %>
+  <%= javascript_include_tag "materialize.min.js" %>
+  <%= javascript_include_tag "jquery.min.js" %>
 
-<%= form_for :user, url: '/users' do |f| %>
+</head>
 
-    Name: <%= f.text_field :name %>
-    Register: <%= f.text_field :reg_no %>
-    Email: <%= f.text_field :email %>
-    Phone: <%= f.text_field :phone %>
-    Password: <%= f.password_field :password %>
-    Password Confirmation: <%= f.password_field :password_confirmation %>
-    <%= f.submit "Submit" %>
 
-<% end %>
-<%= link_to "Already Registered?", '/login' %>
+<body>
+<main>
+  <h1 class="center">Signup!</h1>
+  <h4 class="center red-text"><%=flash[:error]%></h4>
+  <div class="container">
+    <div class="card z-depth-3">
+      <div class="container">
+        <div class="row">
+          <%= form_for :user, url: '/users',html: {:id => 'reg_form'} do |f| %>
+
+            <div class="col s12 l12 m12 input-field"><%= f.text_field :name %><label class="active" for="user_name">Name</label></div>
+            <div class="col s12 l12 m12 input-field"><%= f.text_field :reg_no%><label for="user_reg_no">Registration No.</label></div>
+            <div class="col s12 l6 m6 input-field"><%= f.text_field :email %><label for="user_email">Email</label></div>
+            <div class="col s12 l6 m6 input-field"><%= f.text_field :phone %><label for="user_phone">Phone</label></div>
+            <div class="col s12 l6 m6 input-field"><%= f.password_field :password %><label for="user_password">Password</label></div>
+            <div class="col s12 l6 m6 input-field"><%= f.password_field :password_confirmation %><label for="user_password_confirmation">Password Confirmation</label></div>
+            <a class="waves-effect waves-light btn right"><%= f.submit "Submit" %><i class="material-icons left">send</i></a>
+
+          <% end %>
+
+          <div class="waves-effect waves-light btn left white"><%= link_to "Already Registered?", '/login' %></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col s8 m6 l4 offset-l4 offset-m4 offset-s1"><%= image_tag("ComputerSocietyLogo-black.gif", size: "246x27")%></div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<script src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js'></script>
+<script>
+$(document).ready(function () {
+  $('#reg_form').validate({
+    rules: {
+      user_name: {
+        required: true,
+        minlength: 5
+      },
+      user_email: {
+        required: true,
+        email: true
+      },
+      user_reg_no: {
+        required: true,
+        pattern: '15[a-zA-Z]{3}[0-9]{4}'
+      },
+      user_password: {
+        required: true,
+        minlength: 5
+      },
+      user_password_confirmation: {
+        required: true,
+        minlength: 5,
+        equalTo: "#password"
+      }
+
+    }
+  });
+});
+</script>
+
+</body>
+
+
+
+

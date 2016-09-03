@@ -1,7 +1,45 @@
-<h1>Selections#design</h1>
-<p>Enter the url of the portfolio</p>
-<%= form_tag('des_post', method: :post) do%>
-<p>URL</p><%= text_field_tag(:portfolio)%>
-<%= submit_tag("Submit") %>
-<%end %>
-<%= link_to 'back', selections_path %>
+<head>
+  <%= stylesheet_link_tag "materialize.min.css" %>
+  <%= stylesheet_link_tag "style" %>
+  <%= javascript_include_tag "materialize.min.js" %>
+  <%= javascript_include_tag "jquery.min.js" %>
+</head>
+
+<body>
+<main>
+  <h1 class="center text-white">Design</h1>
+  <div class="container">
+    <div class="card z-depth-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l12 m12"><h5><b>Instructions</b></h5></div>
+          <div class="col s12 l12 m12"><ul>
+            <li>Create a private Google Drive/Dropbox folder</li>
+            <li>Add the content you have created into the folder</li>
+            <li>Create a poster/illustration on the topic "The Bold" and add it to the folder</li>
+            <li>Copy the shareable link(with download permissions) into the url field below and submit</li>
+          </ul>
+            <p>(note : All artwork must be your own, any signs of plagiarism will result in immediate disqualification)</p>
+          </div>
+          <br>
+          <%= form_tag('des_post', method: :post) do%>
+            <div class="col s12 l12 m12"><b>Drive/Dropbox link</b><%= text_field_tag(:portfolio)%></div>
+            <a class="waves-effect waves-light btn right"><i class="material-icons left">send</i><%= submit_tag("Submit") %></a>
+          <%end %>
+          <div class="waves-effect waves-light btn left white"><%= link_to 'back', selections_path %></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col s8 m6 l4 offset-l4 offset-m4 offset-s1"><%= image_tag("ComputerSocietyLogo-black.gif", size: "246x27")%></div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+</body>

@@ -1,7 +1,47 @@
-<h1>Selections#technical</h1>
-<p>Enter the url of the git repo</p>
-<%= form_tag('tech_post', method: :post) do%>
-    <p>URL</p><%= text_field_tag(:repository)%>
-    <%= submit_tag("Submit") %>
-<%end %>
-<%= link_to 'back', selections_path %>
+<head>
+  <%= stylesheet_link_tag "materialize.min.css" %>
+  <%= stylesheet_link_tag "style" %>
+  <%= javascript_include_tag "materialize.min.js" %>
+  <%= javascript_include_tag "jquery.min.js" %>
+</head>
+
+<body>
+<main>
+  <h1 class="center text-white">Technical</h1>
+  <div class="container">
+    <div class="card z-depth-3">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 l12 m12"><h5><b>Instructions</b></h5></div>
+          <div class="col s12 l12 m12"><ol>
+            <li>Follow the link -> <a href="https://github.com/IEEECS-VIT/selections/blob/master/README.md">Github</a></li>
+            <li>Create the Github repository</li>
+            <li>Add the programs to the repository</li>
+            <li>Copy the git link found on the repository and paste it in the URL field</li>
+          </ol>
+            <p>(note : the first submission will be taken as final, so make sure you paste the correct link)</p>
+          </div>
+          <%= form_tag('tech_post', method: :post) do%>
+              <div class="col s12 l12 m12"><p>URL</p><%= text_field_tag(:repository)%></div>
+              <a class="waves-effect waves-light btn right"><i class="material-icons left">send</i><%= submit_tag("Submit") %></a>
+          <%end %>
+          <div class="waves-effect waves-light btn left white"><%= link_to 'back', selections_path %></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col s8 m6 l4 offset-l4 offset-m4 offset-s1"><%= image_tag("ComputerSocietyLogo-black.gif", size: "246x27")%></div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+</body>
+<script>
+  console.log("Hello adventurer, solve the question given on https://projecteuler.net/problem=16 and add the solution to the repo for some extra credits :)")
+</script>

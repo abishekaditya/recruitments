@@ -1,20 +1,68 @@
-<h1>Selections#management</h1>
-<p>Find me in app/views/selections/management.html.erb</p>
+<head>
+  <%= stylesheet_link_tag "materialize.min.css" %>
+  <%= stylesheet_link_tag "style" %>
+  <%= javascript_include_tag "materialize.min.js" %>
+  <%= javascript_include_tag "jquery.min.js" %>
+</head>
 
-<%= form_tag('man_post', :method => :post) do%>
+<body>
+<main>
 
-<%@mcqs.each do |q|%>
-        <p><%= q.id %> <%= q.content %></p>
-        <span><%= radio_button_tag "mcr", "a" %> <%= q.a %></span>
-        <span><%= radio_button_tag "mcr", "b" %> <%= q.b %></span>
-        <span><%= radio_button_tag "mcr", "c" %> <%= q.c %></span>
-        <span><%= radio_button_tag "mcr", "d" %> <%= q.d %></span>
-<% end %>
+  <h1 class="center">Management</h1>
+  <div class="container">
+    <div class="card z-depth-3">
+      <div class="container">
+        <div class="row">
+          <h6><b>Answer</b></h6>
 
-<% @questions.each do |q|%>
-        <p><%= q.id %> <%= q.content %></p>
-        <%= text_area_tag "#{q.id}_resp" %>
-<% end %>
-<%= submit_tag "submit" %>
-<% end%>
-<%= link_to 'back', selections_path %>
+          <%= form_tag('man_post', :method => :post) do%>
+
+              <%@mcqs.each do |q|%>
+                  <div class="col s12 m12 l12"><p> <%= q.content %></p></div>
+                  <div class="col s12 m6 l12"><%= radio_button_tag "#{q.id}_mcr", "a" %><label><%= q.a%></label></div>
+                  <div class="col s12 m6 l12"><%= radio_button_tag "#{q.id}_mcr", "b" %><label><%= q.b%></label></div>
+                  <div class="col s12 m6 l12"><%= radio_button_tag "#{q.id}_mcr", "c" %><label><%= q.c%></label></div>
+                  <div class="col s12 m6 l12"><%= radio_button_tag "#{q.id}_mcr", "d" %><label><%= q.d%></label></div>
+
+              <% end %>
+              <% @questions.each do |q|%>
+                  <div class="col s12 m12 l12"><p> <%= q.content %></p></div>
+                  <%= text_area_tag "#{q.id}_resp",nil, class: 'materialize-textarea' %>
+              <% end %>
+
+
+
+            <a class="waves-effect waves-light btn right"><i class="material-icons left">send</i><%= submit_tag "Submit" %></a>
+          <% end%>
+          <%= link_to 'Back', selections_path, class: "waves-effect waves-light btn left" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col s8 m6 l4 offset-l4 offset-m4 offset-s1"><%= image_tag("ComputerSocietyLogo-black.gif", size: "246x27")%></div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</body>
+
+<style>
+label {
+  font-size: 16px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+</style>
+<script>
+  $(document).ready(function(){
+
+    $('#1_resp').trigger('autoresize');
+  });
+</script>

@@ -10,7 +10,8 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/login'
     else
-      redirect_to '/signup'
+      redirect_to '/signup', :flash => { :error => "Incorrect or existing details!" }
+
     end
   end
 

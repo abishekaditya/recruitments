@@ -36,11 +36,11 @@ class SelectionsController < ApplicationController
     if Answer.find_by_user_id(session[:user_id]).nil?
       Question.all.each do |q|
       answer = Answer.new(user_id: session[:user_id],question_id: q.id,response: params[q.id.to_s + '_resp'])
-        answer.save!
+        answer.save
       end
       Mcq.all.each do |q|
-        mcr = Mcr.new(user_id: session[:user_id],mcq_id: q.id,response: params['mcr'])
-        mcr.save!
+        mcr = Mcr.new(user_id: session[:user_id],mcq_id: q.id,response: params[q.id.to_s+"_mcr"])
+        mcr.save
       end
       redirect_to '/selections'
     else

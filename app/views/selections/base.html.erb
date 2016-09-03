@@ -1,6 +1,43 @@
-<h1>Check out whichever suits you the best</h1>
-<%= link_to_unless @answer.attribute_present?(:id), "Management", selections_management_path %>
-<%= link_to_unless @user.attribute_present?(:repository), "Technical", selections_technical_path%>
-<%= link_to_unless @user.attribute_present?(:portfolio), "Design", selections_design_path%>
-<br>
-<%= link_to "Logout", '\logout' %>
+<head>
+  <%= stylesheet_link_tag "materialize.min.css" %>
+  <%= stylesheet_link_tag "style" %>
+  <%= javascript_include_tag "materialize.min.js" %>
+  <%= javascript_include_tag "jquery.min.js" %>
+</head>
+<body>
+<main>
+  <h2 class="center">Recruitments</h2>
+  <div class="container">
+    <div class="waves-effect waves-light btn-flat red right"><%= link_to "Logout", '\logout' %></div>
+
+    <div class="card z-depth-3">
+      <div class="container">
+
+        <div class="row">
+          <div class="col s12 l12 m12"><h5>Choose the field which fascinates you!</h5></div>
+          <div class="col s10 m10 l4 offset-s1 offset-m1 center"><%= link_to_unless @answer.attribute_present?(:id), image_tag("merged_mgt.png", size: "200"),
+                                                                                    selections_management_path%><p class="grey-text">Management</p></div>
+          <div class="col s10 m10 l4 offset-s1 offset-m1 center"><%= link_to_unless @user.attribute_present?(:portfolio), image_tag("merged_design.png", size: "200"),
+                                                                                    selections_design_path%><p class="grey-text">Design</p></div>
+          <div class="col s10 m10 l4 offset-s1 offset-m1 center"><%= link_to_unless @user.attribute_present?(:repository), image_tag("merged_tech.png", size: "200"),
+                                                                                    selections_technical_path%><p class="grey-text">Technical</p></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col s8 m6 l4 offset-l4 offset-m4 offset-s1"><%= image_tag("ComputerSocietyLogo-black.gif", size: "246x27")%></div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
