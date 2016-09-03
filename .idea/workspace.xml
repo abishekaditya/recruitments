@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afab3d28-d821-4600-a898-e5acff964c1d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/74eff7d9-59f4-43d6-8da1-789f5b76ed2e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/74eff7d9-59f4-43d6-8da1-789f5b76ed2e.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/9d40f4bd-889e-44ce-b696-8de3d14dac5c.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/9d40f4bd-889e-44ce-b696-8de3d14dac5c.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-e06538c5940e522751f458fa62d786ed5f957e8530e49eb51d30b6ac66b9077b.css" afterPath="$PROJECT_DIR$/public/assets/application-e06538c5940e522751f458fa62d786ed5f957e8530e49eb51d30b6ac66b9077b.css" />
     </list>
     <ignored path="recruitments.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/public/assets/application-e06538c5940e522751f458fa62d786ed5f957e8530e49eb51d30b6ac66b9077b.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
-              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -555,7 +551,7 @@
       <workItem from="1472587529205" duration="5268000" />
       <workItem from="1472734863259" duration="4113000" />
       <workItem from="1472865554258" duration="20143000" />
-      <workItem from="1472885912350" duration="115000" />
+      <workItem from="1472885912350" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1472591474672</created>
@@ -575,7 +571,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50370000" />
+    <option name="totallyTimeSpent" value="50565000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -588,9 +584,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1366" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18429004" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18429004" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32854864" sideWeight="0.5030211" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2688822" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1038,7 +1034,7 @@
     <entry file="file://$PROJECT_DIR$/public/assets/application-e06538c5940e522751f458fa62d786ed5f957e8530e49eb51d30b6ac66b9077b.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
           <folding />
         </state>
       </provider>
