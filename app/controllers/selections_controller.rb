@@ -15,11 +15,10 @@ class SelectionsController < ApplicationController
   def des_post
     @user = User.find(session[:user_id])
     if @user.filled_port?
-      flash[:error] = "Already submitted"
-      redirect_to '/selections'
+      redirect_to '/selections', :flash => {:error => "Submission already present"}
     else
       if @user.update_attribute('portfolio', params[:portfolio])
-      redirect_to '/selections'
+      redirect_to '/selections', :flash => {:success => "Submission completed"}
       end
     end
   end
@@ -42,9 +41,9 @@ class SelectionsController < ApplicationController
         mcr = Mcr.new(user_id: session[:user_id],mcq_id: q.id,response: params[q.id.to_s+"_mcr"])
         mcr.save
       end
-      redirect_to '/selections'
+      redirect_to '/selections', :flash => {:success => "Submission completed"}
     else
-      redirect_to '/selections'
+      redirect_to '/selections', :flash => {:error => "Submission already present"}
     end
 
   end
@@ -57,10 +56,10 @@ class SelectionsController < ApplicationController
 
     @user = User.find(session[:user_id])
     if @user.filled_repo?
-      redirect_to '/selections', :flash => { :error => "Incorrect or existing details!" }
+      redirect_to '/selections', :flash => { :error => "Submission already done" }
     else
       if @user.update_attribute('repository', params[:repository])
-        redirect_to '/selections'
+        redirect_to '/selections', :flash => {:success => "Submission completed"}
       end
     end
   end
