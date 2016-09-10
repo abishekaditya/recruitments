@@ -17,9 +17,9 @@
           <br>
           <%= form_tag('des_post', method: :post) do%>
             <div class="col s12 l12 m12"><b>Drive/Dropbox link</b><%= text_field_tag(:portfolio)%></div>
-            <a class="waves-effect waves-light btn right"><i class="material-icons">send</i><%= submit_tag("Submit") %></a>
+          <%= submit_tag("Submit",:class => "btn right") %>
           <%end %>
-          <div class="waves-effect waves-light btn left white"><%= link_to 'back', selections_path %></div>
+          <%= link_to 'back', selections_path ,:class => "waves-effect waves-light btn left white blue-text"%>
         </div>
       </div>
     </div>

@@ -57,8 +57,7 @@ class SelectionsController < ApplicationController
 
     @user = User.find(session[:user_id])
     if @user.filled_repo?
-      flash[:error] = "Already submitted"
-      redirect_to '/selections'
+      redirect_to '/selections', :flash => { :error => "Incorrect or existing details!" }
     else
       if @user.update_attribute('repository', params[:repository])
         redirect_to '/selections'

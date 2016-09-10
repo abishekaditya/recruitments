@@ -11,10 +11,10 @@ class User < ApplicationRecord
   end
 
   def filled_repo?
-    !(self.read_attribute(:repository).nil?)
+    !(self.read_attribute(:repository).nil? || (self.read_attribute(:repository) == ""))
   end
 
   def filled_port?
-    !(self.read_attribute(:portfolio).nil?)
+    !(self.read_attribute(:portfolio).nil? || (self.read_attribute(:portfolio) == ""))
   end
 end
